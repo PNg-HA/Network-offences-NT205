@@ -39,10 +39,10 @@ Log in with the admin account.
 
 Add **php.ini** with following content to `/var/www/html/`: 
 
-`upload_max_filesize = 64M
-max_execution_time = 0
-post_max_size = 150M
-file_uploads = on`
+    upload_max_filesize = 64M
+    max_execution_time = 0
+    post_max_size = 150M
+    file_uploads = on
 
 `docker cp php.ini <docker-wordpress-ID>:/var/www/html`
 Then restart the wordpress container with `docker restart`.
