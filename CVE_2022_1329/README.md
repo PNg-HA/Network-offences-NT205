@@ -24,7 +24,7 @@ The plugin has not checked the PHP upload file from an authenticated user (not n
 
 cd to the folder that stores docker-compose.yaml
 
-docker compose up 
+`docker compose up`
 
 Then you can access the WordPress Admin page with URL `http://localhost:8000`.
 
@@ -44,7 +44,8 @@ max_execution_time = 0
 post_max_size = 150M
 file_uploads = on`
 
-docker cp php.ini <docker-wordpress-ID>:/var/www/html 
+`docker cp php.ini <docker-wordpress-ID>:/var/www/html`
+Then restart the wordpress container with `docker restart`.
 
 Install [elementor.3.6.1.zip](https://github.com/Grazee/CVE-2022-1329-WordPress-Elementor-RCE/blob/main/elementor.3.6.1.zip) to Wordpress and activate.
 
@@ -59,7 +60,7 @@ Remember:
     - a folder named elementor-pro,
         - the folder has the file elementor-pro.php (2nd link, turn off security)
 
-Then: python .\poc.py (for Windows). If prints out:
+Then: `python .\poc.py` (for Windows). If prints out:
 
 ![Untitled](RCE%20Wordpress%20plugin%20with%20CVE-2022-1329%20159bc42a583349619ec9ed229b4febe5/Untitled%202.png)
 
