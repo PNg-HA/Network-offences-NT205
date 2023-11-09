@@ -24,5 +24,4 @@ services:
       WORDPRESS_DB_PASSWORD: pass1234
       WORDPRESS_DB_NAME: wordpress
     volumes:
-      - wordpress:/var/www/html
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
