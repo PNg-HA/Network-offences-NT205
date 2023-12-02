@@ -1,2 +1,2 @@
-# NetworkAttackProject
-My little project for Network Attack subject - NT205.ATTT
+# Network offences Project
+My little project for Network offences subject - NT205.ATTT
