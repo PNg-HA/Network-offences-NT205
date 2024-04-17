@@ -8,3 +8,6 @@ My little project for Network offences subject - NT205.ATTT
 
 ## SMB sniffing mechanism of Inveigh:
 ![image](https://github.com/PNg-HA/Network-offences-NT205/assets/93396414/3cc60d33-c629-4947-9b67-5b00709563a9)
+
+## Detailed:
+For more information, read the full report at https://github.com/PNg-HA/Network-offences-NT205/blob/main/TCM_Bao_cao_cuoi_ky.pdf
